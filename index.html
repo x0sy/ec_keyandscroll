@@ -12,7 +12,11 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
       $(document).ready(function(){
-        $(".slider").bxSlider();
+        $(".slider").bxSlider({
+            mode: "fade",
+            controls: false,
+            pager: false
+        });
       });
     </script>
 </head>
@@ -46,22 +50,22 @@
         <div class="gnav">
             <ul class="gnav__list gnav__list--left">
                 <li class="gnav__item">
-                    <a href="index.html" class="gnav__link"><img src="" alt="" class="gnav__logo"></a>
+                    <a href="#" class="gnav__link"><img src="" alt="" class="gnav__logo"></a>
                 </li>
                 <li class="gnav__item">
-                    <a href="" class="gnav__link"></a>
+                    <a href="products.html" class="gnav__link">Products</a>
                 </li>
                 <li class="gnav__item">
-                    <a href="" class="gnav__link"></a>
+                    <a href="" class="gnav__link">Brands</a>
                 </li>
                 <li class="gnav__item">
-                    <a href="" class="gnav__link"></a>
+                    <a href="" class="gnav__link">Sale</a>
                 </li>
-                <ul class="gnav__list gnav__list-right">
-                    <li class="gnav__item gnav__item--right">
-
-                    </li>
-                </ul>
+            </ul>
+            <ul class="gnav__list gnav__list--right">
+                <li class="gnav__item gnav__item--right">
+                    <input type="text" class="gnav__search" placeholder="検索">
+                </li>
             </ul>
         </div>
     </header>
@@ -73,29 +77,52 @@
             <div class="mcon__cards">
                 <article class="card"><a href="" class="card__link">
                         <figure class="card__fig"><img src="" alt="" class="card__img"></figure>
-                    </a></article>
-                <header class="card__header">
-                    <h2 class="card__title"></h2>
-                    <a href="" class="card__link">
-                        <figcaption class="card__cap"></figcaption></a>
-                </header>
+                    </a>
+                    <footer class="card__footer">
+                        <h2 class="card__title">RU_Boards</h2>
+                        <a href="" class="card__button">
+                            <figcaption class="card__cap">Shop now</figcaption></a>
+                    </footer>
+                </article>
                 <article class="card"><a href="" class="card__link">
                         <figure class="card__fig"><img src="" alt="" class="card__img"></figure>
-                    </a></article>
-                <header class="card__header">
-                    <h2 class="card__title"></h2>
-                    <a href="" class="card__link">
-                        <figcaption class="card__cap"></figcaption></a>
-                </header>
+                    </a>
+                    <footer class="card__footer">
+                        <h2 class="card__title">Logicool</h2>
+                        <a href="" class="card__button">
+                            <figcaption class="card__cap">Shop now</figcaption></a>
+                    </footer>
+                </article>
             </div>
-            <!--div.wrap>h2.mcon__header+div.pickup>ul.pickup__list>(li.pickup__item>a.pickup__link>img.pickup__img^+ul.pickup__list.pickup__list-second>li.pickup__item.pickup__item--second.pickup__item--left>a.pickup__link.pickup__link--second>h3.pickup__brand^^+li.pickup__item.pickup__item--second.pickup__item--right+li.pickup__item.pickup__item--second.pickup__item--left>a.pickup__link.pickup__link--second>h3.pickup__name^^+li.pickup__item.pickup__item--second.pickup__item--right>p.pickup__label--new^{NEW}+li.pickup__item.pickup__item--second.pickup__item--left>p.pickup__price^+li.pickup__item.pickup__item--second.pickup__item--right>p.pickup__label--instock{在庫あり})*3^+a.pickup__link>btn.pickup__btn{すべて見る}-->
+            <!--div.wrap>h2.mcon__header+div.pickup>ul.pickup__list>(li.pickup__item>a.pickup__link>img.pickup__img^+ul.pickup__list.pickup__list--second>li.pickup__item.pickup__item--second.pickup__item--left>a.pickup__link.pickup__link--second>h3.pickup__brand^^+li.pickup__item.pickup__item--second.pickup__item--right+li.pickup__item.pickup__item--second.pickup__item--left>a.pickup__link.pickup__link--second>h3.pickup__name^^+li.pickup__item.pickup__item--second.pickup__item--right>p.pickup__label--new^{NEW}+li.pickup__item.pickup__item--second.pickup__item--left>p.pickup__price^+li.pickup__item.pickup__item--second.pickup__item--right>p.pickup__label--instock{在庫あり})*3^+a.pickup__link>btn.pickup__btn{すべて見る}-->
             <div class="wrap">
                 <h2 class="mcon__header">Available Now</h2>
                 <div class="pickup">
                     <ul class="pickup__list">
                         <li class="pickup__item">
                             <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
+                            <ul class="pickup__list pickup__list--second">
+                                <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
+                                        <h3 class="pickup__brand">RU_Boards</h3>
+                                    </a></li>
+                                <li class="pickup__item pickup__item--second pickup__item--right"></li>
+                                <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
+                                        <h3 class="pickup__name">Chocomint</h3>
+                                    </a></li>
+                                <li class="pickup__item pickup__item--second pickup__item--right">
+                                    <p class="pickup__label--new">NEW</p>
+                                </li>
+                                <li class="pickup__item pickup__item--second pickup__item--left">
+                                    <p class="pickup__price">&yen;30,000</p>
+                                </li>
+                                <li class="pickup__item pickup__item--second pickup__item--right">
+                                    <p class="pickup__label--instock">在庫あり</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pickup__item">
+                            <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
+                            <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
                                         <h3 class="pickup__brand"></h3>
                                     </a></li>
@@ -104,8 +131,8 @@
                                         <h3 class="pickup__name"></h3>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--new"></p>
-                                </li>NEW
+                                    <p class="pickup__label--new">NEW</p>
+                                </li>
                                 <li class="pickup__item pickup__item--second pickup__item--left">
                                     <p class="pickup__price"></p>
                                 </li>
@@ -116,7 +143,7 @@
                         </li>
                         <li class="pickup__item">
                             <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
+                            <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
                                         <h3 class="pickup__brand"></h3>
                                     </a></li>
@@ -125,29 +152,8 @@
                                         <h3 class="pickup__name"></h3>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--new"></p>
-                                </li>NEW
-                                <li class="pickup__item pickup__item--second pickup__item--left">
-                                    <p class="pickup__price"></p>
+                                    <p class="pickup__label--new">NEW</p>
                                 </li>
-                                <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--instock">在庫あり</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pickup__item">
-                            <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
-                                <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
-                                        <h3 class="pickup__brand"></h3>
-                                    </a></li>
-                                <li class="pickup__item pickup__item--second pickup__item--right"></li>
-                                <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
-                                        <h3 class="pickup__name"></h3>
-                                    </a></li>
-                                <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--new"></p>
-                                </li>NEW
                                 <li class="pickup__item pickup__item--second pickup__item--left">
                                     <p class="pickup__price"></p>
                                 </li>
@@ -166,7 +172,7 @@
                     <ul class="pickup__list">
                         <li class="pickup__item">
                             <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
+                            <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
                                         <h3 class="pickup__brand"></h3>
                                     </a></li>
@@ -175,8 +181,8 @@
                                         <h3 class="pickup__name"></h3>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--pre"></p>
-                                </li>予約受付中
+                                    <p class="pickup__label--pre">予約受付中</p>
+                                </li>
                                 <li class="pickup__item pickup__item--second pickup__item--left">
                                     <p class="pickup__price"></p>
                                 </li>
@@ -187,7 +193,7 @@
                         </li>
                         <li class="pickup__item">
                             <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
+                            <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
                                         <h3 class="pickup__brand"></h3>
                                     </a></li>
@@ -196,8 +202,8 @@
                                         <h3 class="pickup__name"></h3>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--pre"></p>
-                                </li>予約受付中
+                                    <p class="pickup__label--pre">予約受付中</p>
+                                </li>
                                 <li class="pickup__item pickup__item--second pickup__item--left">
                                     <p class="pickup__price"></p>
                                 </li>
@@ -208,7 +214,7 @@
                         </li>
                         <li class="pickup__item">
                             <a href="" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
-                            <ul class="pickup__list pickup__list-second">
+                            <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="" class="pickup__link pickup__link--second">
                                         <h3 class="pickup__brand"></h3>
                                     </a></li>
@@ -217,8 +223,8 @@
                                         <h3 class="pickup__name"></h3>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
-                                    <p class="pickup__label--pre"></p>
-                                </li>予約受付中
+                                    <p class="pickup__label--pre">予約受付中</p>
+                                </li>
                                 <li class="pickup__item pickup__item--second pickup__item--left">
                                     <p class="pickup__price"></p>
                                 </li>
@@ -238,7 +244,7 @@
         <ul class="footer__list">
             <li class="footer__item footer__item--left">
                 <h3 class="footer__header">Join our newsletter</h3>
-                <div class="footer__form"><input type="text" class="footer__input footer__input--email"><input type="text" class="footer__input footer__input--submit"></div>
+                <div class="footer__form"><input type="text" class="footer__input footer__input--email"><input type="submit" value="→" class="footer__input footer__input--submit"></div>
                 <ul class="footer__list--sns">
                     <li class="footer__icon"><a href="" class="footer__link--sns"></a></li>
                 </ul>
@@ -249,10 +255,10 @@
                     <li class="fnav__item">
                         <h3 class="fnav__header">Products</h3>
                     </li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Keyboards</a></li>
                     <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Mice</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Accessories</a></li>
                 </ul>
             </li>
             <li class="footer__item fnav">
@@ -260,10 +266,10 @@
                     <li class="fnav__item">
                         <h3 class="fnav__header">Brands</h3>
                     </li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">RU_Boards</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Logicool</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Keychron</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">Ducky</a></li>
                 </ul>
             </li>
             <li class="footer__item fnav">
@@ -271,10 +277,10 @@
                     <li class="fnav__item">
                         <h3 class="fnav__header">Support</h3>
                     </li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
-                    <li class="fnav__item"><a href="" class="fnav__link"></a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">会社概要</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">ご利用規約</a></li>
+                    <li class="fnav__item"><a href="" class="fnav__link">個人情報保護方針</a></li>
+                    <li class="fnav__item"><a href="legal.html" class="fnav__link">特定商取引法</a></li>
                 </ul>
             </li>
         </ul>
