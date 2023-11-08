@@ -21,21 +21,30 @@ a:visited{
 
 .abar{
     height: 30px;
+    width: 100%;
     background: #ddd;
 }
 
 .abar__list{
     display: flex;
-    align-content: center;
+    height: 100%;
+    align-items: center;
     list-style: none;
 }
 
+.abar__item{
+    width: 34%;
+}
+
+.abar__item--second{
+    justify-self: flex-end;
+}
+
 .abar__item--center{
-    justify-self: center;
+    text-align: center;
 }
 
 .abar__item--right{
-    justify-self: flex-end;
 }
 
 .abar__txt{
@@ -43,38 +52,72 @@ a:visited{
     text-decoration: underline;
 }
 
+.abar__list--second{
+    justify-content: flex-end;
+}
+
+.abar__icon{
+    font-size: 1.2rem;
+    padding: 0 15px
+}
+
 .header{
     height: 90px;
+    background: #fff;
+    box-shadow: 0px 1px 5px #aaa;
 
     position: sticky;
     top: 0;
+    z-index: 420;
 }
 
 .gnav{
+    height: 100%;
     display: flex;
-    align-content: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
 .gnav__list{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 
-.gnav__list--left{
-    justify-self: flex-start;
+.gnav__link{
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
-.gnav__list--right{
-    justify-self: flex-end;
+.gnav__list--left{
+    width: 35%;
+    justify-content: space-between;
+}
+
+.gnav__logo{
+    display: block;
+    height: 85px;
 }
 
 .mvis{
+    margin: 100px 0;
+    width: 100%;
     height: calc(100vh-120px);
+    overflow: hidden;
+}
+
+.slider{
+    height: 100%;
+}
+
+.slider__img{
+    clip-path: ellipse(80% 50% at 150% 50%);
 }
 
 .mcon{
     width: 90%;
+    margin: 0 auto;
 }
 
 .mcon__cards{
@@ -154,4 +197,6 @@ a:visited{
     background: #3A3A39;
     color: #eee;
     text-align: center;
+
+    user-select: none;
 }
