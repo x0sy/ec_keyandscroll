@@ -216,6 +216,11 @@ a:visited{
     width: 30%;
 }
 
+.pickup__link{
+    display: block;
+/*    fix this shit*/
+}
+
 .pickup__btn{
     display: block;
     margin: auto;
