@@ -216,14 +216,12 @@ a:visited{
     width: 30%;
 }
 
-.pickup__link{
-    display: block;
-/*    fix this shit*/
+.btn-wrap{
+    width: 100%;
+    text-align: center;
 }
 
 .pickup__btn{
-    display: block;
-    margin: auto;
     padding: 5px 15px;
 
     background: transparent;
