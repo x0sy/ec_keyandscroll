@@ -61,11 +61,12 @@ svg{
 
 .abar__list--second{
     justify-content: flex-end;
+    margin-right: 30px;
 }
 
 .abar__icon{
     font-size: 1.2rem;
-    padding: 0 15px
+    padding: 0 10px
 }
 
 .header{
@@ -82,7 +83,7 @@ svg{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .gnav__list{
@@ -135,7 +136,7 @@ svg{
 .mvis{
     margin: 50px 0;
     width: 100%;
-    height: calc(100vh-120px);
+/*    height: calc(100vh - 120px);*/
     overflow: hidden;
 }
 
@@ -148,7 +149,7 @@ svg{
 }
 
 .mcon{
-    width: 90%;
+    width: 80%;
     margin: 0 auto 200px auto;
 }
 
@@ -262,7 +263,7 @@ svg{
 .footer{
     height: 240px;
     background: #ddd;
-    padding: 30px;
+    padding: 30px 50px;
 }
 
 .footer__list{
@@ -356,12 +357,12 @@ svg{
     cursor: text;
 }
 
-.wrap-sidebar{
+.wrap--sidebar{
     display: flex;
     justify-content: space-between;
 }
 
-.wrap-products{
+.wrap--products{
     width: 75%;
 }
 
@@ -385,7 +386,7 @@ svg{
 .sidebar__item{
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .sidebar__txt{
@@ -479,4 +480,58 @@ svg{
 .legal__txt{
     display: inline;
     line-height: 1.5rem;
+}
+
+/*item page*/
+.wrap--item{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 120px);
+}
+
+.wrap--related{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery{
+    width: 55%;
+}
+
+.gallery__list{
+    display: flex;
+    list-style: none;
+
+    cursor: pointer;
+}
+
+.sidebar--itemp{
+    width: 35%
+}
+
+.sidebar__header--itemp{
+    text-align: left;
+}
+
+.sidebar__cart{
+    border: none;
+    background: #3A3A39;
+
+    padding: 20px 100px;
+    margin: 0 auto;
+    display: block;
+
+    color: #eee;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar__cart:hover{
+    background: #00a29a;
+    transition: all 0.2s ease-in-out;
 }
