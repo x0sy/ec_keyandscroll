@@ -133,7 +133,7 @@ svg{
 }
 
 .mvis{
-    margin: 100px 0;
+    margin: 50px 0;
     width: 100%;
     height: calc(100vh-120px);
     overflow: hidden;
@@ -203,7 +203,6 @@ svg{
 }
 
 .wrap{
-    width: 100%;
     margin-bottom: 100px;
 }
 
@@ -335,4 +334,148 @@ svg{
     text-align: center;
 
     user-select: none;
+}
+
+/*products page*/
+.panko{
+    margin: 50px 0;
+}
+
+.panko__list{
+    display: flex;
+    list-style: none;
+}
+
+.panko__gt{
+    margin: 5px;
+}
+
+.panko__item:last-child{
+    font-weight: 700;
+    pointer-events: none;
+    cursor: text;
+}
+
+.wrap-sidebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-products{
+    width: 75%;
+}
+
+.sidebar{
+    width: 20%;
+}
+
+.sidebar__header{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sidebar__list{
+    list-style: none;
+    padding-bottom: 15px;
+    border-bottom: #3A3A39 solid 1px;
+    margin: 15px 10px;
+}
+
+.sidebar__item{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.sidebar__txt{
+    font-size: .9rem;
+}
+
+.sidebar__check{
+    cursor: pointer;
+}
+
+.sidebar__list--color{
+    display: flex;
+}
+
+.sidebar__swatch{
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+
+    cursor: pointer;
+
+    transition: transform 50ms ease-in-out;
+}
+
+.sidebar__swatch:nth-of-type(1){
+    background: red;
+}
+
+.sidebar__swatch:nth-of-type(2){
+    background: blue;
+}
+
+.sidebar__swatch:nth-of-type(3){
+    background: green;
+}
+
+.sidebar__swatch:checked{
+    border: black solid 2px;
+    box-sizing: border-box;
+}
+
+.sidebar__swatch:hover{
+    transform: scale(1.1);
+    transition: transform 50ms ease-in-out;
+}
+
+/*legal page*/
+.wrap--legal{
+    width: 50%;
+    margin: 0 auto;
+}
+.mcon__header--legal{
+    text-align: center;
+}
+
+.legal__list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.legal__item--left{
+    width: 30%;
+    height: 100%;
+    background: #ddd;
+    padding: 50px 0;
+
+    font-size: 1.2rem;
+}
+
+.legal__item--right{
+    width: 70%;
+    justify-self: center;
+}
+
+.legal__item{
+    text-align: justify;
+}
+
+.legal__list--pmt, .legal__list--fees{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.pmt__item, .fees__item{
+    margin: 5px 0;
+}
+
+.legal__txt{
+    display: inline;
 }
