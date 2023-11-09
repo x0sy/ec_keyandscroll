@@ -434,7 +434,7 @@ svg{
 
 /*legal page*/
 .wrap--legal{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 .mcon__header--legal{
@@ -453,29 +453,30 @@ svg{
     width: 30%;
     height: 100%;
     background: #ddd;
-    padding: 50px 0;
+    padding: 80px 0;
 
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .legal__item--right{
-    width: 70%;
-    justify-self: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .legal__item{
-    text-align: justify;
 }
 
-.legal__list--pmt, .legal__list--fees{
+.legal__list--pmt, .legal__list--fees, .legal__list--return{
     list-style: disc;
     list-style-position: inside;
 }
 
-.pmt__item, .fees__item{
+.pmt__item, .fees__item, .return__item{
     margin: 5px 0;
 }
 
 .legal__txt{
     display: inline;
+    line-height: 1.5rem;
 }
