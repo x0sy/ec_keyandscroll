@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap');
 
 html{
     font-size: 87.5%;
@@ -138,6 +139,46 @@ svg{
     width: 100%;
 /*    height: calc(100vh - 120px);*/
     overflow: hidden;
+}
+
+.mvis__header{
+    position: absolute;
+    left: 30px;
+    top: 40%;
+    z-index: 2;
+}
+
+.mvis__txt{
+    color: #00a29a;
+    -webkit-text-stroke: 1px transparent;
+
+    font-size:  8rem;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 1rem;
+}
+
+.mvis__txt:after{
+    display: block;
+    content: 'New Arrivals';
+    color: transparent;
+    -webkit-text-stroke: 1px #3A3A39;
+    transform: translate(-1%, -105%);
+}
+
+.mvis__btn{
+    background: white;
+    border: #3A3A39 solid 2px;
+
+    display: block;
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+    padding: 10px 50px;
+}
+
+.mvis__link{
+    display: block;
+    background: blue;
 }
 
 .slider{
