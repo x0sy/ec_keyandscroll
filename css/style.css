@@ -135,7 +135,7 @@ svg{
 }
 
 .mvis{
-    margin: 50px 0;
+    margin-bottom: 50px;
     width: 100%;
 /*    height: calc(100vh - 120px);*/
     overflow: hidden;
@@ -144,49 +144,72 @@ svg{
 .mvis__header{
     position: absolute;
     left: 30px;
-    top: 40%;
+    top: 20%;
     z-index: 2;
 }
 
 .mvis__txt{
     color: #00a29a;
-    -webkit-text-stroke: 1px transparent;
 
     font-size:  8rem;
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 1rem;
+
+    user-select: none;
+}
+
+.mvis__txt:before{
+    display: block;
+    content: 'New';
+    color: transparent;
+    -webkit-text-stroke: 1px #3A3A39;
+    transform: translate(-1%, 95%);
 }
 
 .mvis__txt:after{
     display: block;
-    content: 'New Arrivals';
+    content: 'Arrivals';
     color: transparent;
     -webkit-text-stroke: 1px #3A3A39;
     transform: translate(-1%, -105%);
 }
 
+.mvis__btn--wrap{
+    text-align: center;
+}
+
 .mvis__btn{
     background: white;
-    border: #3A3A39 solid 2px;
+    border: #3A3A39 solid 1px;
+    padding: 20px 60px;
 
-    display: block;
-    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
 
-    font-size: 1.5rem;
-    padding: 10px 50px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
-.mvis__link{
-    display: block;
-    background: blue;
+.mvis__btn:hover{
+    background: #00a29a;
+    color: #fff;
+    border: #00a29a solid 1px;
+    transition: all 0.2s ease-in-out;
 }
 
-.slider{
-    height: 100%;
+.slider__img--wrap{
+    height: calc(100vh - 120px);
+    border-radius: 500px;
+    overflow: hidden;
+    transform: translateX(40%);
 }
 
 .slider__img{
-    clip-path: ellipse(80% 50% at 150% 50%);
+    object-fit: cover;
+    transform: translate(0, -20%);
 }
 
 .mcon{
@@ -285,7 +308,7 @@ svg{
     width: 30%;
 }
 
-.btn-wrap{
+.btn--wrap{
     width: 100%;
     text-align: center;
 }

@@ -14,6 +14,9 @@
       $(document).ready(function(){
         $(".slider").bxSlider({
             mode: "fade",
+            auto: true,
+            pause: 4000,
+            speed: 2000,
             controls: false,
             pager: false
         });
@@ -75,10 +78,22 @@
     <main class="main">
         <div class="mvis">
             <div class="mvis__header">
-                <h1 class="mvis__txt">New Arrivals</h1>
-                <a href="products.html" class="mvis__link"><button class="mvis__btn">Shop now</button></a>
+                <h1 class="mvis__txt">New<br>Arrivals</h1>
+                <div class="mvis__btn--wrap">
+                    <a href="products.html" class="mvis__link"><button class="mvis__btn">Shop now</button></a>
+                </div>
             </div>
-            <div class="slider"><img src="images/slide1.png" alt="" class="slider__img"><img src="" alt="" class="slider__img"></div>
+            <div class="slider">
+                <div class="slider__img--wrap">
+                    <img src="images/slide1.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__img--wrap">
+                    <img src="images/slide2.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__img--wrap">
+                    <img src="images/slide3.jpg" alt="" class="slider__img">
+                </div>
+            </div>
         </div>
         <div class="mcon">
             <div class="mcon__cards">
@@ -169,7 +184,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="btn-wrap">
+                    <div class="btn--wrap">
                         <a href="products.html" class="pickup__link"><button class="pickup__btn">すべて見る</button></a>
                     </div>
                 </div>
@@ -242,7 +257,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="btn-wrap">
+                    <div class="btn--wrap">
                         <a href="products.html" class="pickup__link"><button class="pickup__btn">すべて見る</button></a>
                     </div>
                 </div>
