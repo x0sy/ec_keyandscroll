@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale-1.0">
-    <title>Item name</title>
+    <title>Logicool MX Anywhere 3</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,32 +65,40 @@
                <ul class="panko__list">
                    <li class="panko__item"><a href="index.html" class="panko__link">Top</a><span class="panko__gt">&gt;</span></li>
                    <li class="panko__item"><a href="products.html" class="panko__link">Products</a><span class="panko__gt">&gt;</span></li>
-                   <li class="panko__item"><a href="#lol" class="panko__link">Item name
+                   <li class="panko__item"><a href="#lol" class="panko__link">Logicool MX Anywhere 3
                        </a></li>
                </ul>
            </div>
             <div class="wrap--item">
               <div class="gallery">
-                  <img src="" alt="" class="gallery_active">
+                  <img src="images/placeholder.png" alt="" class="gallery_active" id="active">
                   <ul class="gallery__list">
-                      <li class="gallery__item"><img src="" alt="" class="gallery_thumb"></li>
-                      <li class="gallery__item"><img src="" alt="" class="gallery_thumb"></li>
-                      <li class="gallery__item"><img src="" alt="" class="gallery_thumb"></li>
-                      <li class="gallery__item"><img src="" alt="" class="gallery_thumb"></li>
+                      <li class="gallery__item"><img src="images/placeholder.png" alt="" class="gallery__thumb" id="thumb1"></li>
+                      <li class="gallery__item"><img src="images/placeholder.png" alt="" class="gallery__thumb" id="thumb2"></li>
+                      <li class="gallery__item"><img src="images/placeholder.png" alt="" class="gallery__thumb" id="thumb3"></li>
                   </ul>
               </div>
                <aside class="sidebar--itemp">
-                   <h2 class="mcon__header sidebar__header--itemp">Item Name</h2>
-                   <h3 class="sidebar__header sidebar__header--itemp">¥50,000</h3>
+                   <h2 class="mcon__header sidebar__header--itemp">Logicool MX Anywhere 3</h2>
+                   <h3 class="sidebar__header sidebar__header--itemp">¥13,000</h3>
                    <ul class="sidebar__list">
                        <li class="sidebar__item">
-                           <p class="sidebar__txt">600 dpi</p>
+                           <p class="sidebar__txt">8000 dpiセンサー</p>
                        </li>
                        <li class="sidebar__item">
-                           <p class="sidebar__txt">Silicon construction</p>
+                           <p class="sidebar__txt">Bluetooth &amp; Logi Bolt USB</p>
                        </li>
                        <li class="sidebar__item">
-                           <p class="sidebar__txt">Logicool Magwheel&reg; technology</p>
+                           <p class="sidebar__txt">Magspeed Smartshift&reg;スクロールホイール</p>
+                       </li>
+                       <li class="sidebar__item">
+                           <p class="sidebar__txt">マルチデバイス対応</p>
+                       </li>
+                       <li class="sidebar__item">
+                           <p class="sidebar__txt">USB-C</p>
+                       </li>
+                       <li class="sidebar__item">
+                           <p class="sidebar__txt sidebar__item--desc">卓越した汎用性とパフォーマンスを体験してください。どこでも作業できる高度なコンパクトマウス。8K DPIのあらゆる表面トラッキングと静かなクリックにより、次のレベルの精度とレスポンスが実現しました。</p>
                        </li>
                    </ul>
                    <input type="button" class="sidebar__cart" value="Add to cart">
@@ -146,17 +154,17 @@
                             <a href="item.html" class="pickup__link"><img src="" alt="" class="pickup__img"></a>
                             <ul class="pickup__list pickup__list--second">
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="products.html" class="pickup__link pickup__link--second">
-                                        <p class="pickup__brand"></p>
+                                    <p class="pickup__brand">Keychron</p>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right"></li>
                                 <li class="pickup__item pickup__item--second pickup__item--left"><a href="item.html" class="pickup__link pickup__link--second">
-                                        <p class="pickup__name"></p>
+                                        <p class="pickup__name">K2</p>
                                     </a></li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
                                     <p class="pickup__label--new">NEW</p>
                                 </li>
                                 <li class="pickup__item pickup__item--second pickup__item--left">
-                                    <p class="pickup__price"></p>
+                                    <p class="pickup__price">&yen;6,500</p>
                                 </li>
                                 <li class="pickup__item pickup__item--second pickup__item--right">
                                     <p class="pickup__label--instock">在庫あり</p>
@@ -220,5 +228,23 @@
             </li>
         </ul>
     </footer>
+    <script>
+        var thumb1 = document.getElementById("thumb1");
+        var thumb2 = document.getElementById("thumb2");
+        var thumb3 = document.getElementById("thumb3");
+        var active = document.getElementById("active");
+
+        thumb1.addEventListener("click", function(){
+            active.src="images/gallery1.jpg";
+        });
+
+        thumb2.addEventListener("click", function(){
+            active.src="images/gallery2.jpg";
+        });
+
+        thumb3.addEventListener("click", function(){
+            active.src="images/gallery3.jpg";
+        });
+    </script>
 </body>
 </html>
