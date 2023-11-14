@@ -304,7 +304,18 @@ svg{
     aspect-ratio: 1;
     margin-bottom: 20px;
 
+    display: block;
+
     border: #3A3A39 solid 1px;
+    box-sizing: border-box;
+
+    transition: all 200ms ease-in-out;
+}
+
+.pickup__img:hover{
+    transform: scale(1.01);
+    opacity: 0.9;
+    transition: all 200ms ease-in-out;
 }
 
 .pickup__item{
@@ -611,7 +622,7 @@ svg{
 }
 
 .gallery_active{
-    height: 60%;
+    height: 65%;
     object-fit: cover;
 }
 
